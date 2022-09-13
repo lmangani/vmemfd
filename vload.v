@@ -11,7 +11,7 @@ fn main() {
 		return
 	} else {
 		println('executing $args.str()')
-		memexec('clickhouse', args)
+		memexec('app', args)
 		return
 	}
 }
