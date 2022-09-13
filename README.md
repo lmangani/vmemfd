@@ -1,5 +1,16 @@
-# vload
+
+# <img style="float: right;"  src="https://blog.vlang.io/images/veasel.webp" width=50 > vLoad
+
 Experimental [`memfd_create`](https://man7.org/linux/man-pages/man2/memfd_create.2.html) ELF execution prototype in v for _lambda-like_ serverless functions
+
+#### [`memfd_create`](https://man7.org/linux/man-pages/man2/memfd_create.2.html)
+memfd_create() creates an anonymous file and returns a file
+       descriptor that refers to it.  The file behaves like a regular
+       file, and so can be modified, truncated, memory-mapped, and so
+       on.  However, unlike a regular file, it lives in RAM and has a
+       volatile backing storage.  Once all references to the file are
+       dropped, it is automatically released.  Anonymous memory is used
+       for all backing pages of the file. 
 
 ## Goals
 - [x] memfd based ELF execution in v
