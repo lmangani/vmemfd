@@ -14,11 +14,11 @@ data := os.read_file(filename) or {
 }
 
 // Allocate a memfd MFD_CLOEXEC and write ELF
-res := memfd.vmemfd_new('clickhouse')
-os.fd_write(res, data)	
+fd_id := memfd.vmemfd_new('myapp')
+os.fd_write(fd_id, data)	
 
 // Execute w/ arguments from memfd
-pointer := '/proc/self/fd/3'
+pointer := '/proc/self/fd/$fd_id'
 os.execve(pointer, args, []) or {
   panic('error executing $pointer')
   return
