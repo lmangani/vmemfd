@@ -1,5 +1,5 @@
 # vload
-experimental [`memfd_create`](https://man7.org/linux/man-pages/man2/memfd_create.2.html) ELF execution prototype in v for _lambda-like_ serverless functions
+Experimental [`memfd_create`](https://man7.org/linux/man-pages/man2/memfd_create.2.html) ELF execution prototype in v for _lambda-like_ serverless functions
 
 ## Goals
 - [x] memfd based ELF execution in v
