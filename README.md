@@ -3,6 +3,7 @@ experimental `memfd` ELF execution prototype in v
 
 ## Goals
 - [x] memfd based execution in v
+  - [x] c module exporting `memfd_create` 
 - [ ] self extracting _lambda-like_ serverless function
 
 ## Gist
