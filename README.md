@@ -1,11 +1,11 @@
 # vload
-experimental `memfd` ELF execution prototype in v
+experimental [`memfd_create`](https://man7.org/linux/man-pages/man2/memfd_create.2.html) ELF execution prototype in v for _lambda-like_ serverless functions
 
 ## Goals
 - [x] memfd based ELF execution in v
-  - [x] c module exporting `memfd_create` 
+  - [x] c module exporting [`memfd_create`](https://man7.org/linux/man-pages/man2/memfd_create.2.html)
 - [ ] use `$embed_file` _for files < 20Mb_
-- [ ] self extracting _lambda-like_ serverless function
+- [ ] self-extracting binary decompressing to `memfd` pointer
 
 ## Gist
 ```c
