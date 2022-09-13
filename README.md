@@ -1,7 +1,7 @@
 
 # <img style="float: right;"  src="https://blog.vlang.io/images/veasel.webp" width=50 > vmemfd
 
-Experimental [`memfd_create`](https://man7.org/linux/man-pages/man2/memfd_create.2.html) ELF execution prototype in v for _lambda-like_ serverless functions
+Experimental [`memfd_create`](https://man7.org/linux/man-pages/man2/memfd_create.2.html) ELF execution prototype in [`vlang`](https://vlang.io)
 
 #### [`memfd_create`](https://man7.org/linux/man-pages/man2/memfd_create.2.html)
 memfd_create() creates an anonymous file and returns a file
