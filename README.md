@@ -1,5 +1,5 @@
 
-# <img style="float: right;"  src="https://blog.vlang.io/images/veasel.webp" width=50 > vLoad
+# <img style="float: right;"  src="https://blog.vlang.io/images/veasel.webp" width=50 > vmemfd
 
 Experimental [`memfd_create`](https://man7.org/linux/man-pages/man2/memfd_create.2.html) ELF execution prototype in v for _lambda-like_ serverless functions
 
