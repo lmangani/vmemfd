@@ -13,7 +13,7 @@ data := os.read_file(filename) or {
   return
 }
 
-// Allocate a memfd EXEC and write bin
+// Allocate a memfd MFD_CLOEXEC and write ELF
 res := memfd.vmemfd_new('clickhouse')
 os.fd_write(res, data)	
 
