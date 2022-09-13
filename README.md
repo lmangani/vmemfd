@@ -6,7 +6,7 @@ experimental `memfd` ELF execution prototype in v
 - [ ] self extracting _lambda-like_ serverless function
 
 ## Gist
-```
+```c
 // Read binary ELF
 data := os.read_file(filename) or {
   panic('error reading elf $filename')
@@ -27,11 +27,11 @@ os.execve(pointer, args, []) or {
 
 ## Test
 Compile an ELF binary expecting args _(or bring your own)_
-```
+```bash
 v -o app -prod app.v
 ```
 
 Load and execute ELF using `memdfd` 
-```
+```bash
 v run vload.v test me
 ```
