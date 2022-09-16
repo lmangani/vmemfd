@@ -4,7 +4,7 @@
 Experimental [`memfd_create`](https://man7.org/linux/man-pages/man2/memfd_create.2.html) ELF execution prototype in [`vlang`](https://vlang.io)
 
 #### [`memfd_create`](https://man7.org/linux/man-pages/man2/memfd_create.2.html)
-memfd_create() creates an anonymous file and returns a file
+> memfd_create() creates an anonymous file and returns a file
        descriptor that refers to it.  The file behaves like a regular
        file, and so can be modified, truncated, memory-mapped, and so
        on.  However, unlike a regular file, it lives in RAM and has a
