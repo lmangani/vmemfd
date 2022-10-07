@@ -20,6 +20,9 @@ Experimental [`memfd_create`](https://man7.org/linux/man-pages/man2/memfd_create
 
 ## Gist
 ```c
+
+import lmangani.memfd
+
 // Read binary ELF
 data := os.read_file(filename) or {
   panic('error reading elf $filename')
